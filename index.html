@@ -3,80 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy 16 🤍</title>
+<title>Happy 16 Danish</title>
 
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#ffd6e7,#ffeef6);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
 }
 
-.box{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    width:85%;
-    max-width:400px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+.container {
+  padding: 30px 20px;
 }
 
-h1{
-    color:#ff4f8b;
+h1 {
+  font-size: 35px;
+  margin-top: 40px;
 }
 
-button{
-    background:#ff4f8b;
-    color:white;
-    border:none;
-    padding:12px 25px;
-    border-radius:30px;
-    font-size:18px;
+button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-#surprise{
-    display:none;
-    margin-top:20px;
+.message {
+  display: none;
+  margin-top: 30px;
+  line-height: 1.8;
+  font-size: 16px;
 }
+
+.photos {
+  display: none;
+  margin-top: 30px;
+}
+
+.photos img {
+  width: 90%;
+  max-width: 350px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="box">
+<div class="container">
 
-<h1>Happy 16 🤍</h1>
+<h1>Happy 16, Danish 🤍</h1>
 
-<p>Untuk seseorang yang sangat spesial.</p>
+<button onclick="openGift()">Open</button>
 
-<button onclick="buka()">Open</button>
-
-<div id="surprise">
-
-<h2>Happy Birthday, Your Girl 💖</h2>
+<div class="message" id="message">
 
 <p>
-Semoga di umur yang baru ini kamu selalu sehat,
-bahagia, semua impianmu tercapai,
-dan semoga aku masih bisa menemani setiap langkahmu.
-Terima kasih sudah hadir dalam hidupku.
-Aku sayang kamu. 🤍
+Selamat ulang tahun yang ke-16, Danish 🤍
+</p>
+
+<p>
+Semoga di umur yang baru ini kamu selalu diberikan kebahagiaan,
+kesehatan, dan hal-hal baik yang kamu inginkan.
+</p>
+
+<p>
+Terima kasih sudah menjadi seseorang yang berarti.
+Semoga semua usaha dan mimpi kamu bisa tercapai satu per satu.
+Tetap jadi Danish yang aku kenal dan terus menjadi lebih baik.
+</p>
+
+<p>
+Semoga hari ini menjadi hari yang spesial buat kamu.
+Jangan lupa tersenyum dan nikmati setiap momen yang ada.
+</p>
+
+<p>
+Happy birthday, Danish 🤍
 </p>
 
 </div>
 
+
+<div class="photos" id="photos">
+
+<img src="IMG-20260724-WA0094.jpg">
+<img src="IMG-20260727-WA0042.jpg">
+<img src="IMG-20260727-WA0046.jpg">
+<img src="IMG-20260727-WA0049(1).jpg">
+
 </div>
 
+
+</div>
+
+
 <script>
-function buka(){
-document.getElementById("surprise").style.display="block";
+
+function openGift(){
+document.getElementById("message").style.display="block";
+document.getElementById("photos").style.display="block";
 }
+
 </script>
 
-<img src="IMG-20260724-WA0094.jpg" alt="Foto Danish" style="width:80%; border-radius:15px;"></body>
+</body>
 </html>
