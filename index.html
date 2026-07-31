@@ -92,7 +92,9 @@ button{
 </head>
 
 <body>
-
+<audio id="bgMusic" loop>
+    <source src="tiktok_music_7599849285038968096.mp3" type="audio/mpeg">
+</audio>
 <div class="page active" id="p1">
 <h1>Happy 16, Danish 💙</h1>
 <p>A little surprise for you</p>
@@ -136,7 +138,7 @@ Happy birthday 💙
 
 <div class="page" id="p3">
 
-<h1>Our Memories 💙</h1>
+<h1>Memories 💙</h1>
 
 <div class="photos">
 
@@ -168,6 +170,12 @@ Happy birthday 💙
 let page=1;
 
 function nextPage(){
+
+if(page===1){
+   const music = document.getElementById("bgMusic");
+   music.volume = 0.35;
+   music.play();
+}
 
 document.getElementById("p"+page).classList.remove("active");
 
