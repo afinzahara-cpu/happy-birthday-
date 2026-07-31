@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 16 🤍</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#ffeef6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    width:85%;
+    max-width:400px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#ff4f8b;
+}
+
+button{
+    background:#ff4f8b;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:18px;
+}
+
+#surprise{
+    display:none;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Happy 16 🤍</h1>
+
+<p>Untuk seseorang yang sangat spesial.</p>
+
+<button onclick="buka()">Open</button>
+
+<div id="surprise">
+
+<h2>Happy Birthday, Your Girl 💖</h2>
+
+<p>
+Semoga di umur yang baru ini kamu selalu sehat,
+bahagia, semua impianmu tercapai,
+dan semoga aku masih bisa menemani setiap langkahmu.
+Terima kasih sudah hadir dalam hidupku.
+Aku sayang kamu. 🤍
+</p>
+
+</div>
+
+</div>
+
+<script>
+function buka(){
+document.getElementById("surprise").style.display="block";
+}
+</script>
+
+</body>
+</html>
