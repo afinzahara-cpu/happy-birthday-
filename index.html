@@ -58,9 +58,13 @@ button {
 
 <body>
 
-  <audio id="music" controls loop>
+  <audio id="music" loop>
   <source src="tiktok_music_7599849285038968096.mp3" type="audio/mpeg">
 </audio>
+
+<button class="music-btn" onclick="document.getElementById('music').play()">
+🎵
+</button>
 
 <button class="music-btn" onclick="playMusic()">
   🎵
@@ -77,6 +81,7 @@ button {
   border: none;
   background: white;
   font-size: 25px;
+}
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
