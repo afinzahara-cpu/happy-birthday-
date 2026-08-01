@@ -1,1 +1,83 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Happy Birthday</title><link rel="stylesheet" href="style.css"></head><body><canvas id="bg"></canvas><main class="card"><h1>Happy 16! 🎉</h1><p id="typing"></p><button id="gift">Open My Gift 🎁</button><section id="letter" class="hide"><h2>For You 💙</h2><p>Happy Birthday! Semoga semua impianmu tercapai, sehat selalu, dan tetap menjadi pribadi yang baik. Terima kasih sudah hadir dan semoga hari ini menjadi hari yang penuh kebahagiaan.</p></section></main><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Danish</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#8ec5ff, #e0f2ff);
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.active {
+  display: flex;
+}
+
+h1 {
+  color: #0066cc;
+  font-size: 35px;
+}
+
+p {
+  font-size: 20px;
+  color: #333;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #0066cc;
+  color: white;
+  font-size: 16px;
+}
+
+.heart {
+  font-size: 50px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="slide active">
+  <div class="heart">💙</div>
+  <h1>Happy 16, Danish</h1>
+  <p>Today is your special day ✨</p>
+
+  <button onclick="nextSlide()">Next</button>
+</div>
+
+
+<script>
+let slide = 0;
+
+function nextSlide(){
+  let slides = document.querySelectorAll(".slide");
+
+  slides[slide].classList.remove("active");
+
+  slide++;
+
+  slides[slide].classList.add("active");
+}
+</script>
+
+</body>
+</html>
