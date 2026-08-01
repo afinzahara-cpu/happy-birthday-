@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Happy Birthday Danish</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(#8ec5ff, #e0f2ff);
+  background: linear-gradient(#9bd1ff, #ffffff);
   overflow: hidden;
 }
 
@@ -33,22 +34,23 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   color: #333;
-}
-
-button {
-  margin-top: 30px;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 20px;
-  background: #0066cc;
-  color: white;
-  font-size: 16px;
+  max-width: 350px;
 }
 
 .heart {
-  font-size: 50px;
+  font-size: 60px;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: #0066cc;
+  color: white;
+  font-size: 16px;
 }
 </style>
 
@@ -57,30 +59,12 @@ button {
 <body>
 
 <div class="slide active">
-  ... slide pertama ...
-</div>
-
-
-<div class="slide">
-  <div class="heart">🎂</div>
-  <h1>For You, Danish</h1>
-  <p>
-    Terima kasih sudah hadir dan menjadi seseorang yang spesial.
-    Semoga di umur 16 ini kamu selalu bahagia, sehat, dan semua impianmu tercapai ✨
-  </p>
-
-  <button onclick="nextSlide()">Next</button>
-</div>
-
-
-<div class="slide">
   <div class="heart">💙</div>
 
-  <h1>My Wish For You</h1>
+  <h1>Happy 16, Danish</h1>
 
   <p>
-    Semoga kamu selalu dikelilingi orang-orang yang sayang sama kamu.
-    Tetap jadi Danish yang baik, kuat, dan jangan lupa bahagia ya ✨
+    Today is your special day ✨
   </p>
 
   <button onclick="nextSlide()">Next</button>
@@ -100,5 +84,6 @@ function nextSlide(){
   slides[slide].classList.add("active");
 }
 </script>
+
 </body>
 </html>
