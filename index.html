@@ -93,6 +93,10 @@ function nextSlide(){
 
   slide++;
 
+  if (slide >= slides.length) {
+    slide = 0;
+  }
+
   slides[slide].classList.add("active");
 }
 </script>
