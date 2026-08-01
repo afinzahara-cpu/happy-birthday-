@@ -58,9 +58,45 @@ button {
 
 <body>
 
-  <audio autoplay loop>
+  <audio id="music" loop>
   <source src="tiktok_music_7599849285038968096.mp3" type="audio/mpeg">
 </audio>
+
+<button class="music-btn" onclick="playMusic()">
+  🎵
+</button>
+
+<style>
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
+}
+</style>
+
+<script>
+function playMusic(){
+  let music = document.getElementById("music");
+
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
+</script>
 
 
 <div class="slide active">
